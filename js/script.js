@@ -25,17 +25,18 @@ if (menuToggle) {
 
 // Navbar Background on Scroll
 const navbar = document.querySelector('.navbar');
+const navbarContainer = document.querySelector('.navbar .container');
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 100) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
-        navbar.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.5)';
+        navbarContainer.style.background = 'rgba(17, 17, 17, 0.95)';
+        navbarContainer.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.6)';
     } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.8)';
-        navbar.style.boxShadow = 'none';
+        navbarContainer.style.background = 'rgba(17, 17, 17, 0.8)';
+        navbarContainer.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.6)';
     }
 
     lastScroll = currentScroll;
