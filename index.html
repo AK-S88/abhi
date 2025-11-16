@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio | Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="status-badge">Available for Work</span>
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm a</span>
+                        <span class="name">Data Analyst</span>
+                    </h1>
+                    <p class="hero-description">
+                        I have 5+ years of experience designing data-driven solutions and creating compelling visualizations
+                        that transform complex datasets into actionable business insights. Specialized in Python, SQL, and
+                        modern BI tools to help organizations make smarter decisions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <!-- Add your image here -->
+                            <div class="image-placeholder">
+                                <span>Your Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-info">
+                            <h3 class="profile-name">Your Name</h3>
+                            <div class="profile-location">
+                                <span>📍</span>
+                                <span>Your City, Country</span>
+                            </div>
+                        </div>
+
+                        <div class="pill-badges">
+                            <span class="pill-badge">
+                                <span class="pill-badge-icon">⚡</span>
+                                <span>DATA EXPERT</span>
+                            </span>
+                            <span class="pill-badge">
+                                <span class="pill-badge-icon">💼</span>
+                                <span>AVAILABLE</span>
+                            </span>
+                        </div>
+
+                        <div class="profile-clients">
+                            <p class="profile-clients-title">Tools & Technologies I work with</p>
+                            <div class="client-logos">
+                                <div class="client-logo" title="Python">🐍</div>
+                                <div class="client-logo" title="SQL">💾</div>
+                                <div class="client-logo" title="Tableau">📊</div>
+                                <div class="client-logo" title="PowerBI">📈</div>
+                                <div class="client-logo" title="Excel">📉</div>
+                            </div>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="#" class="social-icon" title="LinkedIn">in</a>
+                            <a href="#" class="social-icon" title="GitHub">gh</a>
+                            <a href="#" class="social-icon" title="Email">@</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-card card">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a passionate Data Analyst with expertise in turning raw data into meaningful insights.
+                        With a strong foundation in statistics, programming, and business intelligence, I help
+                        organizations make data-driven decisions that drive growth and efficiency.
+                    </p>
+                    <p class="about-text">
+                        My approach combines technical expertise with business acumen, ensuring that every analysis
+                        delivers actionable recommendations. I specialize in building dashboards, conducting predictive
+                        analytics, and creating data pipelines that streamline decision-making processes.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">📊</div>
+                            <h4>Data Visualization</h4>
+                            <p>Creating compelling visual stories from complex datasets</p>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🔍</div>
+                            <h4>Statistical Analysis</h4>
+                            <p>Advanced statistical methods and predictive modeling</p>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">⚡</div>
+                            <h4>Business Intelligence</h4>
+                            <p>Transforming data into strategic business insights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills/Services Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Services</span>
+                <h2 class="section-title">How Can I Assist You?</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card card" data-number="01">
+                    <div class="skill-category">
+                        <div class="skill-icon">📊</div>
+                        <h3>Data Analysis</h3>
+                        <p class="about-text" style="margin-top: 1rem;">
+                            Transform raw data into meaningful insights using statistical methods,
+                            Python, R, and SQL. Expert in exploratory data analysis and hypothesis testing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skill-card card" data-number="02">
+                    <div class="skill-category">
+                        <div class="skill-icon">📈</div>
+                        <h3>Data Visualization</h3>
+                        <p class="about-text" style="margin-top: 1rem;">
+                            Create compelling dashboards and visual stories using Tableau, Power BI,
+                            and Python libraries to make data accessible and actionable.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skill-card card" data-number="03">
+                    <div class="skill-category">
+                        <div class="skill-icon">🤖</div>
+                        <h3>Predictive Modeling</h3>
+                        <p class="about-text" style="margin-top: 1rem;">
+                            Build machine learning models for forecasting, classification, and pattern
+                            recognition using Scikit-learn, TensorFlow, and advanced algorithms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="skill-card card" data-number="04">
+                    <div class="skill-category">
+                        <div class="skill-icon">💼</div>
+                        <h3>Business Intelligence</h3>
+                        <p class="about-text" style="margin-top: 1rem;">
+                            Develop comprehensive BI solutions with automated reporting, KPI tracking,
+                            and data pipelines that drive strategic business decisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Project Visual</div>
+                    </div>
+                    <div class="project-content">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <h3 class="project-title" style="margin-bottom: 0;">Sales Forecasting Dashboard</h3>
+                            <span class="tag">2024</span>
+                        </div>
+                        <p class="project-description">
+                            Developed a comprehensive sales forecasting dashboard using Python and Tableau,
+                            resulting in 25% improvement in inventory management accuracy.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">DATA ANALYSIS</span>
+                            <span class="tag">VISUALIZATION</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Project Visual</div>
+                    </div>
+                    <div class="project-content">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <h3 class="project-title" style="margin-bottom: 0;">Customer Segmentation</h3>
+                            <span class="tag">2024</span>
+                        </div>
+                        <p class="project-description">
+                            Implemented machine learning algorithms to segment customers, enabling targeted
+                            marketing strategies that increased conversion rates by 35%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MACHINE LEARNING</span>
+                            <span class="tag">PYTHON</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <div class="project-image">
+                        <div class="image-placeholder">Project Visual</div>
+                    </div>
+                    <div class="project-content">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                            <h3 class="project-title" style="margin-bottom: 0;">Financial Analytics Platform</h3>
+                            <span class="tag">2023</span>
+                        </div>
+                        <p class="project-description">
+                            Built an automated financial reporting system processing 100K+ transactions daily,
+                            reducing manual reporting time by 80%.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">ETL</span>
+                            <span class="tag">AUTOMATION</span>
+                        </div>
+                        <a href="#" class="project-link">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Career Journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - Present</span>
+                        <h3 class="timeline-title">Senior Data Analyst</h3>
+                        <p class="timeline-company">Tech Company Inc.</p>
+                        <p class="timeline-description">
+                            Leading data analytics initiatives for a portfolio of enterprise clients.
+                            Developed predictive models and dashboards that influenced strategic business decisions.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Increased operational efficiency by 40% through data-driven process optimization</li>
+                            <li>Led a team of 3 junior analysts in delivering complex analytics projects</li>
+                            <li>Implemented automated reporting systems serving 500+ stakeholders</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 - 2021</span>
+                        <h3 class="timeline-title">Data Analyst</h3>
+                        <p class="timeline-company">Analytics Solutions Ltd.</p>
+                        <p class="timeline-description">
+                            Performed comprehensive data analysis and visualization for various business units.
+                            Collaborated with stakeholders to identify key metrics and KPIs.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Created 20+ interactive dashboards for executive decision-making</li>
+                            <li>Reduced data processing time by 60% through ETL optimization</li>
+                            <li>Conducted A/B testing resulting in 28% increase in user engagement</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item card">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2019</span>
+                        <h3 class="timeline-title">Junior Data Analyst</h3>
+                        <p class="timeline-company">Data Insights Corp.</p>
+                        <p class="timeline-description">
+                            Started career in data analytics, focusing on data cleaning, exploratory analysis,
+                            and basic reporting for internal teams.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>Processed and cleaned datasets containing millions of records</li>
+                            <li>Developed automated reports that saved 15 hours/week</li>
+                            <li>Assisted in building predictive models for customer churn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card card">
+                    <div class="contact-info">
+                        <h3>Let's Work Together</h3>
+                        <p>
+                            I'm always interested in hearing about new projects and opportunities.
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">💼</div>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">🐙</div>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
