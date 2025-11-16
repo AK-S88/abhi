@@ -142,8 +142,75 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Add parallax effect to hero background
+    // Parallax Scroll Effect - Hero Section
+    const parallaxLayer = document.querySelector('.parallax-layer');
+    const parallaxName = document.querySelector('.parallax-name');
+    const parallaxIcons = document.querySelectorAll('.parallax-icon');
     const heroSection = document.querySelector('.hero-section');
+    const heroContent = document.querySelector('.hero-content');
+
+    if (parallaxLayer && heroSection) {
+        const handleParallaxScroll = () => {
+            const scrolled = window.pageYOffset;
+            const heroHeight = heroSection.offsetHeight;
+
+            // Calculate scroll progress (0 to 1) through the hero section
+            const scrollProgress = Math.min(scrolled / heroHeight, 1);
+
+            // Name moves slower (foreground element)
+            // Transform: move up based on scroll, but slower than scroll speed
+            const nameTransform = scrolled * 0.5; // Slower speed
+            parallaxName.style.transform = `translateY(-${nameTransform}px)`;
+
+            // Fade out based on scroll progress
+            // Start fading at 30% scroll, fully transparent at 80%
+            let opacity = 1;
+            if (scrollProgress > 0.3) {
+                opacity = 1 - ((scrollProgress - 0.3) / 0.5);
+            }
+            parallaxName.style.opacity = Math.max(0, opacity);
+
+            // Icons move faster (background elements) - creates depth
+            parallaxIcons.forEach(icon => {
+                const speed = parseFloat(icon.getAttribute('data-speed')) || 1.5;
+                const iconTransform = scrolled * speed; // Faster speed
+                icon.style.transform = `translateY(-${iconTransform}px)`;
+                icon.style.opacity = Math.max(0, opacity);
+            });
+
+            // Show hero content as parallax fades
+            // Start showing at 20% scroll
+            if (scrollProgress > 0.2 && heroContent) {
+                heroContent.classList.add('visible');
+            } else if (heroContent) {
+                heroContent.classList.remove('visible');
+            }
+
+            // Hide entire layer when fully scrolled
+            if (scrollProgress >= 0.8) {
+                parallaxLayer.style.pointerEvents = 'none';
+            } else {
+                parallaxLayer.style.pointerEvents = 'auto';
+            }
+        };
+
+        // Use requestAnimationFrame for smooth performance
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    handleParallaxScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Initial call
+        handleParallaxScroll();
+    }
+
+    // Add parallax effect to hero background
     if (heroSection) {
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
