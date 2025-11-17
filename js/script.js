@@ -159,38 +159,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Name moves slower (foreground element)
             // Transform: move up based on scroll, but slower than scroll speed
-            const nameTransform = scrolled * 0.5; // Slower speed
+            const nameTransform = scrolled * 0.4; // Very slow - foreground
             parallaxName.style.transform = `translateY(-${nameTransform}px)`;
 
             // Fade out based on scroll progress
-            // Start fading at 30% scroll, fully transparent at 80%
+            // Start fading at 20% scroll, fully transparent at 70%
             let opacity = 1;
-            if (scrollProgress > 0.3) {
-                opacity = 1 - ((scrollProgress - 0.3) / 0.5);
+            if (scrollProgress > 0.2) {
+                opacity = 1 - ((scrollProgress - 0.2) / 0.5);
             }
             parallaxName.style.opacity = Math.max(0, opacity);
 
             // Icons move faster (background elements) - creates depth
             parallaxIcons.forEach(icon => {
                 const speed = parseFloat(icon.getAttribute('data-speed')) || 1.5;
-                const iconTransform = scrolled * speed; // Faster speed
+                const iconTransform = scrolled * speed; // Much faster - background
                 icon.style.transform = `translateY(-${iconTransform}px)`;
                 icon.style.opacity = Math.max(0, opacity);
             });
 
             // Show hero content as parallax fades
-            // Start showing at 20% scroll
-            if (scrollProgress > 0.2 && heroContent) {
+            // Start showing at 40% scroll (when parallax is fading significantly)
+            if (scrollProgress > 0.4 && heroContent) {
                 heroContent.classList.add('visible');
             } else if (heroContent) {
                 heroContent.classList.remove('visible');
             }
 
             // Hide entire layer when fully scrolled
-            if (scrollProgress >= 0.8) {
-                parallaxLayer.style.pointerEvents = 'none';
+            if (scrollProgress >= 0.7) {
+                parallaxLayer.style.display = 'none';
             } else {
-                parallaxLayer.style.pointerEvents = 'auto';
+                parallaxLayer.style.display = 'flex';
             }
         };
 
