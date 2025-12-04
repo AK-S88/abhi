@@ -32,286 +32,310 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <!-- Parallax Layer -->
-        <div class="parallax-layer">
-            <div class="parallax-name">Abhishek</div>
-            <div class="parallax-icons">
-                <div class="parallax-icon" data-speed="2.0" style="top: 15%; left: 10%;">
-                    <span>🐍</span>
-                    <span class="icon-label">Python</span>
-                </div>
-                <div class="parallax-icon" data-speed="2.5" style="top: 25%; left: 80%;">
-                    <span>📊</span>
-                    <span class="icon-label">Tableau</span>
-                </div>
-                <div class="parallax-icon" data-speed="1.8" style="top: 60%; left: 15%;">
-                    <span>💾</span>
-                    <span class="icon-label">SQL</span>
-                </div>
-                <div class="parallax-icon" data-speed="3.0" style="top: 70%; left: 75%;">
-                    <span>📈</span>
-                    <span class="icon-label">Power BI</span>
-                </div>
-                <div class="parallax-icon" data-speed="2.2" style="top: 40%; left: 85%;">
-                    <span>☁️</span>
-                    <span class="icon-label">AWS</span>
-                </div>
-                <div class="parallax-icon" data-speed="1.9" style="top: 80%; left: 20%;">
-                    <span>📉</span>
-                    <span class="icon-label">Excel</span>
-                </div>
-                <div class="parallax-icon" data-speed="2.4" style="top: 10%; left: 70%;">
-                    <span>🔧</span>
-                    <span class="icon-label">R</span>
-                </div>
-                <div class="parallax-icon" data-speed="2.7" style="top: 50%; left: 8%;">
-                    <span>🎯</span>
-                    <span class="icon-label">Analytics</span>
+    <!-- Hero Section - Bento Grid Layout -->
+    <section id="home" class="hero-section" style="padding-top: 120px; padding-bottom: 60px;">
+        <div class="bento-container">
+            <!-- Main Title Card - Large 2x2 -->
+            <div class="bento-card bento-2x2" style="background: linear-gradient(135deg, rgba(65, 74, 55, 0.95) 0%, rgba(153, 116, 74, 0.1) 100%); display: flex; flex-direction: column; justify-content: center;">
+                <span class="status-badge" style="margin-bottom: 1.5rem;">Available for Work</span>
+                <h1 class="serif-display" style="font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1rem; color: var(--text-primary);">
+                    <span style="display: block; font-size: 1.25rem; font-weight: 400; margin-bottom: 0.5rem; color: var(--text-secondary);">Hi, I'm</span>
+                    <span class="vintage-accent">Abhishek Kumar Singh</span>
+                </h1>
+                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 2rem;">
+                    High-performer with 3+ years of experience in data analytics, strategy, and large-scale process improvement.
+                </p>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <span class="status-badge">Available for Work</span>
-                    <h1 class="hero-title">
-                        <span class="greeting">Hi, I'm</span>
-                        <span class="name">Abhishek Kumar Singh</span>
-                    </h1>
-                    <p class="hero-description">
-                        High-performer with 3+ years of experience in data analytics, strategy, and large-scale process improvement.
-                        I drive business decisions by leveraging a full-stack data toolkit from data engineering (SQL, PySpark) and
-                        ML infrastructure deployment (AWS) to advanced BI visualization (Tableau, Power BI, Advanced Excel).
-                        Strong communicator with a 4.0 GPA MSc in Business Analytics.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Contact Me</a>
-                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+            <!-- Profile Image Card - Tall 1x2 -->
+            <div class="bento-card bento-1x2" style="background: linear-gradient(180deg, rgba(65, 74, 55, 0.95) 0%, rgba(153, 116, 74, 0.08) 100%); padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div style="width: 100%; aspect-ratio: 1; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 1.5rem; background: linear-gradient(135deg, #2C3328 0%, #414A37 100%); display: flex; align-items: center; justify-content: center;">
+                    <span style="color: var(--text-muted); font-size: 1rem;">Your Photo</span>
+                </div>
+                <h3 class="serif-display" style="font-size: 1.5rem; margin-bottom: 0.5rem; text-align: center; color: var(--text-primary);">Abhishek Kumar Singh</h3>
+                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); margin-bottom: 1rem;">
+                    <span>📍</span>
+                    <span>Boston, MA</span>
+                </div>
+                <div style="display: flex; gap: 0.5rem; justify-content: center;">
+                    <a href="https://www.linkedin.com/in/aks88/" target="_blank" class="social-icon" title="LinkedIn">in</a>
+                    <a href="https://github.com/AK-S88" target="_blank" class="social-icon" title="GitHub">gh</a>
+                    <a href="mailto:aks88abhi@gmail.com" class="social-icon" title="Email">@</a>
+                </div>
+            </div>
+
+            <!-- Education Badge Card - Small 1x1 -->
+            <div class="bento-card bento-1x1" style="background: rgba(153, 116, 74, 0.08); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🎓</div>
+                <h4 class="serif-display" style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--text-primary);">MSc in BA</h4>
+                <p style="font-size: 1.5rem; font-weight: 700; color: var(--accent-primary);">4.0 GPA</p>
+            </div>
+
+            <!-- Experience Stats Card - Small 1x1 -->
+            <div class="bento-card bento-1x1" style="background: linear-gradient(135deg, rgba(153, 116, 74, 0.12) 0%, rgba(65, 74, 55, 0.9) 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <p style="font-size: 3rem; font-weight: 700; font-family: var(--font-display); background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem;">3+</p>
+                <p style="color: var(--text-secondary); font-size: 1rem;">Years of Experience</p>
+            </div>
+
+            <!-- Core Skills Card - Wide 2x1 -->
+            <div class="bento-card bento-2x1" style="background: rgba(65, 74, 55, 0.9);">
+                <h4 class="serif-display" style="font-size: 1.125rem; margin-bottom: 1.5rem; color: var(--text-primary); text-align: center;">Core Competencies</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 1rem;">
+                    <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🐍</div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">Python</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">💾</div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">SQL</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">Tableau</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📈</div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">Power BI</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">☁️</div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">AWS</div>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📉</div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">Excel</div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-card">
-                        <div class="profile-image">
-                            <!-- Add your image here -->
-                            <div class="image-placeholder">
-                                <span>Your Photo</span>
-                            </div>
-                        </div>
+            </div>
 
-                        <div class="profile-info">
-                            <h3 class="profile-name">Abhishek Kumar Singh</h3>
-                            <div class="profile-location">
-                                <span>📍</span>
-                                <span>Boston, MA</span>
-                            </div>
-                        </div>
+            <!-- Certification Badge - Small 1x1 -->
+            <div class="bento-card bento-1x1" style="background: linear-gradient(135deg, rgba(153, 116, 74, 0.08) 0%, rgba(65, 74, 55, 0.95) 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+                <h4 style="font-size: 0.875rem; font-weight: 700; color: var(--accent-primary); text-transform: uppercase; letter-spacing: 0.5px;">Tableau Certified</h4>
+            </div>
 
-                        <div class="pill-badges">
-                            <span class="pill-badge">
-                                <span class="pill-badge-icon">🎓</span>
-                                <span>MSc BA | 4.0 GPA</span>
-                            </span>
-                            <span class="pill-badge">
-                                <span class="pill-badge-icon">📊</span>
-                                <span>TABLEAU CERTIFIED</span>
-                            </span>
-                        </div>
-
-                        <div class="profile-clients">
-                            <p class="profile-clients-title">Core competencies</p>
-                            <div class="client-logos">
-                                <div class="client-logo" title="SQL">SQL</div>
-                                <div class="client-logo" title="Python">Py</div>
-                                <div class="client-logo" title="Tableau">📊</div>
-                                <div class="client-logo" title="PowerBI">BI</div>
-                                <div class="client-logo" title="AWS">☁️</div>
-                                <div class="client-logo" title="Excel">XL</div>
-                            </div>
-                        </div>
-
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/aks88/" target="_blank" class="social-icon" title="LinkedIn">in</a>
-                            <a href="https://github.com/AK-S88" target="_blank" class="social-icon" title="GitHub">gh</a>
-                            <a href="mailto:aks88abhi@gmail.com" class="social-icon" title="Email">@</a>
-                        </div>
-                    </div>
-                </div>
+            <!-- Quick Bio Card - Wide 1x1 -->
+            <div class="bento-card bento-1x1" style="background: rgba(153, 116, 74, 0.06); display: flex; flex-direction: column; justify-content: center;">
+                <p class="vintage-accent" style="font-size: 1.125rem; line-height: 1.6; text-align: center;">
+                    "Turning data into strategic insights"
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section - Bento Grid Layout -->
     <section id="about" class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">About Me</span>
-                <h2 class="section-title">Who I Am</h2>
+        <div class="bento-container">
+            <!-- Section Header Card -->
+            <div class="bento-card bento-full" style="background: transparent; border: none; padding: 2rem 0;">
+                <div style="text-align: center;">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">Who I Am</h2>
+                </div>
             </div>
-            <div class="about-card card">
-                <div class="about-content">
-                    <p class="about-text">
-                        I'm a passionate Data Analyst with expertise in turning raw data into meaningful insights.
-                        With a strong foundation in statistics, programming, and business intelligence, I help
-                        organizations make data-driven decisions that drive growth and efficiency.
-                    </p>
-                    <p class="about-text">
-                        My approach combines technical expertise with business acumen, ensuring that every analysis
-                        delivers actionable recommendations. I specialize in building dashboards, conducting predictive
-                        analytics, and creating data pipelines that streamline decision-making processes.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-icon">📊</div>
-                            <h4>Data Visualization</h4>
-                            <p>Creating compelling visual stories from complex datasets</p>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">🔍</div>
-                            <h4>Statistical Analysis</h4>
-                            <p>Advanced statistical methods and predictive modeling</p>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-icon">⚡</div>
-                            <h4>Business Intelligence</h4>
-                            <p>Transforming data into strategic business insights</p>
-                        </div>
+
+            <!-- Main Bio Card - Large 2x1 -->
+            <div class="bento-card bento-2x1" style="background: linear-gradient(135deg, rgba(65, 74, 55, 0.95) 0%, rgba(153, 116, 74, 0.08) 100%);">
+                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+                    I'm a passionate Data Analyst with expertise in turning raw data into meaningful insights.
+                    With a strong foundation in statistics, programming, and business intelligence, I help
+                    organizations make data-driven decisions that drive growth and efficiency.
+                </p>
+                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8;">
+                    My approach combines technical expertise with business acumen, ensuring that every analysis
+                    delivers actionable recommendations.
+                </p>
+            </div>
+
+            <!-- Data Visualization Card -->
+            <div class="bento-card bento-1x1" style="background: rgba(153, 116, 74, 0.08); display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+                <h4 class="serif-display" style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">Data Visualization</h4>
+                <p style="font-size: 0.95rem; color: var(--text-secondary);">Visual storytelling</p>
+            </div>
+
+            <!-- Statistical Analysis Card -->
+            <div class="bento-card bento-1x1" style="background: linear-gradient(135deg, rgba(153, 116, 74, 0.1) 0%, rgba(65, 74, 55, 0.95) 100%); display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🔍</div>
+                <h4 class="serif-display" style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">Statistical Analysis</h4>
+                <p style="font-size: 0.95rem; color: var(--text-secondary);">Predictive modeling</p>
+            </div>
+
+            <!-- Additional Expertise Card -->
+            <div class="bento-card bento-2x1" style="background: rgba(65, 74, 55, 0.9);">
+                <h4 class="serif-display" style="font-size: 1.125rem; margin-bottom: 1rem; color: var(--text-primary);">Specialized In</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📈</div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">Dashboards</div>
+                    </div>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔄</div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">ETL Pipelines</div>
+                    </div>
+                    <div style="padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🎯</div>
+                        <div style="font-size: 0.875rem; color: var(--text-secondary); font-weight: 600;">KPI Tracking</div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Business Intelligence Card -->
+            <div class="bento-card bento-1x1" style="background: linear-gradient(135deg, rgba(65, 74, 55, 0.95) 0%, rgba(153, 116, 74, 0.12) 100%); display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                <h4 class="serif-display" style="font-size: 1.125rem; margin-bottom: 0.5rem; color: var(--text-primary);">Business Intelligence</h4>
+                <p style="font-size: 0.95rem; color: var(--text-secondary);">Strategic insights</p>
+            </div>
+
+            <!-- Philosophy Quote Card -->
+            <div class="bento-card bento-1x1" style="background: rgba(153, 116, 74, 0.06); display: flex; align-items: center; justify-content: center; text-align: center;">
+                <p class="vintage-accent" style="font-size: 1rem; line-height: 1.6;">
+                    "Data is the new oil, but insights are the refined fuel"
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Skills/Services Section -->
+    <!-- Skills/Services Section - Bento Grid Layout -->
     <section id="skills" class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">My Services</span>
-                <h2 class="section-title">How Can I Assist You?</h2>
+        <div class="bento-container">
+            <!-- Section Header -->
+            <div class="bento-card bento-full" style="background: transparent; border: none; padding: 2rem 0;">
+                <div style="text-align: center;">
+                    <span class="section-label">My Services</span>
+                    <h2 class="section-title">How Can I Assist You?</h2>
+                </div>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card card" data-number="01">
-                    <div class="skill-category">
-                        <div class="skill-icon">📊</div>
-                        <h3>Data Analysis</h3>
-                        <p class="about-text" style="margin-top: 1rem;">
-                            Transform raw data into meaningful insights using statistical methods,
-                            Python, R, and SQL. Expert in exploratory data analysis and hypothesis testing.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="skill-card card" data-number="02">
-                    <div class="skill-category">
-                        <div class="skill-icon">📈</div>
-                        <h3>Data Visualization</h3>
-                        <p class="about-text" style="margin-top: 1rem;">
-                            Create compelling dashboards and visual stories using Tableau, Power BI,
-                            and Python libraries to make data accessible and actionable.
-                        </p>
-                    </div>
-                </div>
+            <!-- Data Analysis Card - Large 2x2 -->
+            <div class="bento-card bento-2x2" style="background: linear-gradient(135deg, rgba(65, 74, 55, 0.95) 0%, rgba(153, 116, 74, 0.08) 100%); display: flex; flex-direction: column; justify-content: center;">
+                <div style="position: absolute; top: 1.5rem; right: 1.5rem; font-size: 3rem; font-weight: 800; font-family: var(--font-display); color: rgba(219, 194, 166, 0.06); line-height: 1;">01</div>
+                <div style="font-size: 3.5rem; margin-bottom: 1.5rem;">📊</div>
+                <h3 class="serif-display" style="font-size: 1.75rem; margin-bottom: 1rem; color: var(--text-primary);">Data Analysis</h3>
+                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.7;">
+                    Transform raw data into meaningful insights using statistical methods,
+                    Python, R, and SQL. Expert in exploratory data analysis and hypothesis testing.
+                </p>
+            </div>
 
-                <div class="skill-card card" data-number="03">
-                    <div class="skill-category">
-                        <div class="skill-icon">🤖</div>
-                        <h3>Predictive Modeling</h3>
-                        <p class="about-text" style="margin-top: 1rem;">
-                            Build machine learning models for forecasting, classification, and pattern
-                            recognition using Scikit-learn, TensorFlow, and advanced algorithms.
-                        </p>
-                    </div>
-                </div>
+            <!-- Data Visualization Card - Tall 1x2 -->
+            <div class="bento-card bento-1x2" style="background: rgba(153, 116, 74, 0.08); display: flex; flex-direction: column; justify-content: center;">
+                <div style="position: absolute; top: 1.5rem; right: 1.5rem; font-size: 2.5rem; font-weight: 800; font-family: var(--font-display); color: rgba(219, 194, 166, 0.06); line-height: 1;">02</div>
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📈</div>
+                <h3 class="serif-display" style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Data Visualization</h3>
+                <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7;">
+                    Create compelling dashboards and visual stories using Tableau, Power BI,
+                    and Python libraries to make data accessible and actionable.
+                </p>
+            </div>
 
-                <div class="skill-card card" data-number="04">
-                    <div class="skill-category">
-                        <div class="skill-icon">💼</div>
-                        <h3>Business Intelligence</h3>
-                        <p class="about-text" style="margin-top: 1rem;">
-                            Develop comprehensive BI solutions with automated reporting, KPI tracking,
-                            and data pipelines that drive strategic business decisions.
-                        </p>
-                    </div>
-                </div>
+            <!-- Predictive Modeling Card - Small 1x1 -->
+            <div class="bento-card bento-1x1" style="background: linear-gradient(135deg, rgba(153, 116, 74, 0.12) 0%, rgba(65, 74, 55, 0.95) 100%); display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="position: absolute; top: 1rem; right: 1rem; font-size: 2rem; font-weight: 800; font-family: var(--font-display); color: rgba(219, 194, 166, 0.06); line-height: 1;">03</div>
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🤖</div>
+                <h3 class="serif-display" style="font-size: 1.25rem; color: var(--text-primary);">Predictive Modeling</h3>
+            </div>
+
+            <!-- Business Intelligence Card - Wide 2x1 -->
+            <div class="bento-card bento-2x1" style="background: rgba(65, 74, 55, 0.9);">
+                <div style="position: absolute; top: 1.5rem; right: 1.5rem; font-size: 3rem; font-weight: 800; font-family: var(--font-display); color: rgba(219, 194, 166, 0.06); line-height: 1;">04</div>
+                <div style="font-size: 3rem; margin-bottom: 1rem;">💼</div>
+                <h3 class="serif-display" style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Business Intelligence</h3>
+                <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7;">
+                    Develop comprehensive BI solutions with automated reporting, KPI tracking,
+                    and data pipelines that drive strategic business decisions.
+                </p>
+            </div>
+
+            <!-- Additional Service Highlight -->
+            <div class="bento-card bento-1x1" style="background: linear-gradient(135deg, rgba(65, 74, 55, 0.95) 0%, rgba(153, 116, 74, 0.1) 100%); display: flex; flex-direction: column; justify-content: center; text-align: center;">
+                <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">⚡</div>
+                <p style="font-size: 0.95rem; color: var(--text-secondary);">Fast turnaround & scalable solutions</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section - Bento Grid Layout -->
     <section id="projects" class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Portfolio</span>
-                <h2 class="section-title">Featured Projects</h2>
+        <div class="bento-container">
+            <!-- Section Header -->
+            <div class="bento-card bento-full" style="background: transparent; border: none; padding: 2rem 0;">
+                <div style="text-align: center;">
+                    <span class="section-label">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
             </div>
-            <div class="projects-grid">
-                <div class="project-card card">
-                    <div class="project-image">
-                        <div class="image-placeholder">🤖 NLP</div>
-                    </div>
-                    <div class="project-content">
-                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                            <h3 class="project-title" style="margin-bottom: 0;">AI Chatbot with NLP</h3>
-                            <span class="tag">2024</span>
-                        </div>
-                        <p class="project-description">
-                            Leveraged Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and
-                            sentence-transformers in Python to provide accurate, dynamic responses to user queries.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">LLM</span>
-                            <span class="tag">RAG</span>
-                            <span class="tag">PYTHON</span>
-                        </div>
-                        <a href="#" class="project-link">View Details →</a>
-                    </div>
-                </div>
 
-                <div class="project-card card">
-                    <div class="project-image">
-                        <div class="image-placeholder">📊 Analytics</div>
-                    </div>
-                    <div class="project-content">
-                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                            <h3 class="project-title" style="margin-bottom: 0;">Subscriber Retention Analysis</h3>
-                            <span class="tag">2024</span>
-                        </div>
-                        <p class="project-description">
-                            Projected a 15% increase in customer LTV and engagement by applying statistical techniques
-                            and A/B testing to inform a targeted retention strategy.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">SQL</span>
-                            <span class="tag">TABLEAU</span>
-                            <span class="tag">A/B TESTING</span>
-                        </div>
-                        <a href="#" class="project-link">View Details →</a>
-                    </div>
+            <!-- AI Chatbot Project - Large 2x2 -->
+            <div class="bento-card bento-2x2" style="background: linear-gradient(135deg, rgba(65, 74, 55, 0.95) 0%, rgba(153, 116, 74, 0.08) 100%); display: flex; flex-direction: column;">
+                <div style="flex: 1; background: linear-gradient(135deg, #2C3328 0%, #414A37 100%); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; min-height: 200px;">
+                    <span style="font-size: 4rem;">🤖</span>
                 </div>
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <h3 class="serif-display" style="font-size: 1.75rem; color: var(--text-primary);">AI Chatbot with NLP</h3>
+                    <span class="tag">2024</span>
+                </div>
+                <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                    Leveraged Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and
+                    sentence-transformers in Python to provide accurate, dynamic responses to user queries.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                    <span class="tag">LLM</span>
+                    <span class="tag">RAG</span>
+                    <span class="tag">PYTHON</span>
+                </div>
+                <a href="#" class="project-link">View Details →</a>
+            </div>
 
-                <div class="project-card card">
-                    <div class="project-image">
-                        <div class="image-placeholder">⚡ Automation</div>
+            <!-- Subscriber Retention Project - Tall 1x2 -->
+            <div class="bento-card bento-1x2" style="background: rgba(153, 116, 74, 0.08); display: flex; flex-direction: column;">
+                <div style="background: linear-gradient(135deg, #2C3328 0%, #414A37 100%); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; padding: 3rem;">
+                    <span style="font-size: 3rem;">📊</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                    <h3 class="serif-display" style="font-size: 1.375rem; color: var(--text-primary);">Subscriber Retention</h3>
+                    <span class="tag">2024</span>
+                </div>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                    Projected a 15% increase in customer LTV through statistical techniques and A/B testing.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; margin-top: auto;">
+                    <span class="tag">SQL</span>
+                    <span class="tag">TABLEAU</span>
+                </div>
+                <a href="#" class="project-link">View Details →</a>
+            </div>
+
+            <!-- ML Infrastructure Project - Wide 2x1 -->
+            <div class="bento-card bento-2x1" style="background: rgba(65, 74, 55, 0.9); display: flex; gap: 2rem;">
+                <div style="flex: 0 0 140px; background: linear-gradient(135deg, #2C3328 0%, #414A37 100%); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center;">
+                    <span style="font-size: 3rem;">⚡</span>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column;">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                        <h3 class="serif-display" style="font-size: 1.5rem; color: var(--text-primary);">ML Infrastructure Deployment</h3>
+                        <span class="tag">2025</span>
                     </div>
-                    <div class="project-content">
-                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-                            <h3 class="project-title" style="margin-bottom: 0;">ML Infrastructure Deployment</h3>
-                            <span class="tag">2025</span>
-                        </div>
-                        <p class="project-description">
-                            Designed and deployed a scalable ML infrastructure using AWS SageMaker and Terraform,
-                            reducing ML deployment time from weeks to days and improving decision-making accuracy by 11%.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">AWS</span>
-                            <span class="tag">TERRAFORM</span>
-                            <span class="tag">ML OPS</span>
-                        </div>
-                        <a href="#" class="project-link">View Details →</a>
+                    <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+                        Designed and deployed a scalable ML infrastructure using AWS SageMaker and Terraform,
+                        reducing ML deployment time from weeks to days.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto;">
+                        <span class="tag">AWS</span>
+                        <span class="tag">TERRAFORM</span>
+                        <span class="tag">ML OPS</span>
                     </div>
                 </div>
+            </div>
+
+            <!-- Project Stats Card -->
+            <div class="bento-card bento-1x1" style="background: linear-gradient(135deg, rgba(153, 116, 74, 0.12) 0%, rgba(65, 74, 55, 0.95) 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                <p style="font-size: 3rem; font-weight: 700; font-family: var(--font-display); background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem;">10+</p>
+                <p style="color: var(--text-secondary); font-size: 1rem;">Projects Delivered</p>
             </div>
         </div>
     </section>
